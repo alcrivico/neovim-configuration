@@ -7,14 +7,6 @@ local colors = {
   violet      = '#9A348E',
   grey        = '#424C64',
   yellow      = '#FCA17D',
-  blue_       = '#86BBD8EE',
-  cyan_       = '#06969AEE',
-  black_      = '#1F2430EE',
-  white_      = '#c6c6c6EE',
-  red_        = '#DA627DEE',
-  violet_     = '#9A348EEE',
-  grey_       = '#424C64EE',
-  yellow_     = '#FCA17DEE',
   transparent = '00000000',
 }
 
@@ -99,6 +91,7 @@ return {
         },
         lualine_x = {
           { 'branch', separator = { left = '' }, right_padding = 1 },
+          { 'diff', colored = false, source = nil },
         },
         lualine_y = {
           { 'filetype', colored = false, separator = { left = '' } },
