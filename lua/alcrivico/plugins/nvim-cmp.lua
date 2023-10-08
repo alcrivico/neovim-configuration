@@ -55,7 +55,7 @@ function M.setup()
     {
       sources = cmp.config.sources({
         { name = 'git' },
-      }, 
+      },
       {
         { name = 'buffer' },
       })
@@ -76,7 +76,7 @@ function M.setup()
       { name = 'path' }
     },
     {
-      { name = 'cmdline' }      
+      { name = 'cmdline' }
     })
   })
 end
