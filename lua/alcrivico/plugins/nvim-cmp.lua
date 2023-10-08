@@ -17,8 +17,8 @@ function M.setup()
     mapping = {
       ["<C-d>"] = cmp.mapping.scroll_docs(-4),
       ["<C-f>"] = cmp.mapping.scroll_docs(4),
-      ["<C-e>"] = cmp.mapping.abort(),
-      ["<C-j>"] = cmp.mapping(
+      ["<S-e>"] = cmp.mapping.abort(),
+      ["<S-j>"] = cmp.mapping(
         function(fallback)
           if cmp.visible() then
             cmp.select_next_item()
@@ -29,8 +29,12 @@ function M.setup()
           end
         end, { "i", "s" }
       ),
-      ["<C-k>"] = cmp.mapping.select_prev_item(),
+      ["<S-k>"] = cmp.mapping.select_prev_item(),
       ["<tab>"] = cmp.mapping.confirm {
+        behavior = cmp.ConfirmBehavior.Insert,
+        select = true,
+      },
+      ["<CR>"] = cmp.mapping.confirm {
         behavior = cmp.ConfirmBehavior.Insert,
         select = true,
       },
