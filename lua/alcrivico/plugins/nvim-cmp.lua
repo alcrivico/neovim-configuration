@@ -45,10 +45,13 @@ function M.setup()
       { name = "path" },
       { name = "luasnip" },
       { name = "buffer" },
+      { name = "copilot" },
     },
   })
 
   cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done { map_char = { tex = "" } })
+
+  vim.api.nvim_set_hl(0, "CmpItemKindCopilot", { fg = "#6CC644" })
 
   -- Configuration for a speccific filetype
   cmp.setup.filetype('gitcommit',

@@ -9,6 +9,19 @@ return {
     "L3MON4D3/LuaSnip",
     "saadparwaiz1/cmp_luasnip",
     "windwp/nvim-autopairs",
+    {
+      "zbirenbaum/copilot-cmp",
+      dependencies = {
+        "zbirenbaum/copilot.lua",
+        cmd = { "Copilot" },
+        event = { "VeryLazy" },
+        opts = {
+          suggestion = { enabled = false },
+          panel = { enabled = false },
+        },
+      },
+      config = true,
+    },
   },
   event = "VeryLazy",
   main = "alcrivico.plugins.nvim-cmp",
