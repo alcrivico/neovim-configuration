@@ -97,7 +97,7 @@ return {
           { 'filetype', colored = false, separator = { left = '' } },
         },
         lualine_z = {
-          { 'datetime', style = ("%H:%M"), separator = { right = '', left = '' }, left_padding = 1 },
+          { 'datetime', style = ("󰣐 %H:%M"), separator = { right = '', left = '' }, left_padding = 1 },
         },
       },
 
