@@ -22,6 +22,7 @@ return {
 			"python",
 			"c_sharp",
 			"regex",
+      "zig",
 		},
 		highlight = {
 			enable = true,
